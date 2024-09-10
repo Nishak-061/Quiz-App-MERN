@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+.congrats-quiz-container {
+  background-color: #041325;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Add some padding for smaller screens */
+}
+
+.congrats-quiz-header-container {
+  display: flex;
+  justify-content: center;
+}
+
+.congrats-quiz-header {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  height: auto; /* Allow height to adjust based on content */
+  max-height: 80vh; /* Maximum height to ensure it doesn't overflow the screen */
+  max-width: 800px; /* Adjust maximum width for smaller screens */
+  text-align: center;
+}
+
+.congrats-thankyou-quiz {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #474444;
+  margin-top: 10%;
+  text-align: center;
+  white-space: pre-wrap; /* Ensure that line breaks and multiple spaces are preserved */
+}
+
+.congrats-quiz-cup-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.congrats-cup-image {
+  width: 200px; /* Adjust the size as needed */
+  height: auto;
+}
+
+.congrats-quiz-total-score {
+  margin-top: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px; /* Responsive font size */
+  color: #474444;
+  text-align: center;
+}
+
+.score-number {
+  color: #60b84b; /* Green color for the score number */
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .congrats-quiz-container {
+    background-color: white; /* Change container background to white */
+    justify-content: flex-start; /* Align content to the top */
+    padding: 0; /* Remove padding */
+  }
+  .congrats-quiz-header {
+    height: 500vh;
+  }
+  .congrats-thankyou-quiz {
+    font-size: 7vw; /* Larger font size for smaller screens */
+  }
+
+  .congrats-cup-image {
+    width: 60vw; /* Larger image width for smaller screens */
+    max-width: 350px; /* Limit maximum size */
+    height: 40vh;
+    max-height: 600px;
+  }
+
+  .congrats-quiz-total-score {
+    font-size: 7vw; /* Larger font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .congrats-thankyou-quiz {
+    font-size: 8vw; /* Even larger font size for very small screens */
+  }
+
+  .congrats-cup-image {
+    width: 70vw; /* Adjust image width */
+    max-width: 120px; /* Limit maximum size */
+  }
+
+  .congrats-quiz-total-score {
+    font-size: 8vw; /* Larger font size for very small screens */
+  }
+}

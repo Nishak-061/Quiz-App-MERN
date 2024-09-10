@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.qa-quiz-analysis-container {
+  display: flex;
+  height: 100vh;
+}
+
+.qa-quiz-analysis-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 17%;
+  background-color: white;
+  border-right: 1px solid #ddd;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.qa-quiz-analysis-sidebar-header {
+  text-align: center;
+  font-family: "Jomhuria", serif;
+  font-weight: 400;
+  font-size: 70px;
+  color: #474444;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+.qa-quiz-analysis-middle-content {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  padding: 40px;
+  margin-left: -10%;
+  margin-top: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.qa-quiz-horizontal-line {
+  width: 150px;
+  margin-left: 10px;
+  margin-top: 60%;
+}
+
+.qa-quiz-analysis-logout {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: #474444;
+  margin-bottom: 4%;
+  cursor: pointer;
+}
+
+.qa-quiz-analysis-dashboard-item,
+.qa-quiz-analysis-analytics-item,
+.qa-quiz-analysis-createquiz-item {
+  height: 50px; /* Set a fixed height */
+  width: 200px; /* Set a fixed width */
+  background-color: transparent; /* Default background color */
+  display: flex; /* Center content horizontally and vertically */
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent; /* Default border */
+  border-radius: 8px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.qa-quiz-analysis-dashboard-item.active,
+.qa-quiz-analysis-analytics-item.active,
+.qa-quiz-analysis-createquiz-item.active {
+  background-color: white; /* Background color of the active box */
+  border: 1px solid #ccc; /* Border around the active box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.qa-quiz-analysis-main-content {
+  margin-left: 17%;
+  width: 83%;
+  box-sizing: border-box;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.qa-quiz-analysis-info {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #ff5d01;
+  text-align: end;
+}
+
+.qa-quiz-analysis-impression {
+  margin-right: 90px;
+}
+
+.qa-quiz-analysis-heading-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #5076ff;
+  margin-top: -10%;
+  margin-left: 5%;
+}
+
+.question-section {
+  margin-top: 10%;
+  margin-left: 6%;
+}
+
+.qa-quiz-analysis-question-heading-section {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.qaquizanalysis-ul {
+  list-style: none;
+  padding: 0;
+}
+
+.qaquizanalysis-li {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.qaquizanalysis-li .option-clicks {
+  font-size: 30px;
+  font-weight: 600;
+  color: #474444;
+}
+
+.qaquizanalysis-li .option-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #474444;
+}
+
+.qa-question-separator {
+  width: 800px;
+  margin: 30px 0;
+  margin-left: 30px;
+  border: 0;
+  border-top: 1px solid #d7d7d7;
+}
+
+.qa-quiz-analysis-answer-box-container {
+  display: flex;
+  gap: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
+
+.answer-box {
+  width: 245px;
+  height: 89px;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column; /* Stack the number above the text */
+  justify-content: center;
+  align-items: center; /* Centers content horizontally */
+  text-align: center;
+}
+
+.answer-number {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600; /* Bold */
+  color: #474444;
+}
+
+.answer-number-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+}

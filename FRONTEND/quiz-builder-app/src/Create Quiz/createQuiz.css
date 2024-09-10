@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* .create-quiz-box {
+    position: relative;
+    z-index: 2000;
+}   */
+
+.create-quiz-input-text {
+  width: 400px;
+  height: 45px;
+  margin-right: 2%;
+  margin-top: 6%;
+  border: none;
+  box-shadow: 0 8px 8px 0px rgb(0, 0, 0, 0.12);
+}
+
+.create-quiz-input-text::placeholder {
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.create-quiz-type {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #9f9f9f;
+  display: flex;
+  gap: 43px;
+  margin-left: 9%;
+}
+
+.create-quiz-type-text {
+  margin-top: 6%;
+}
+
+.create-quiz-QA-button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding: 8px 30px;
+  margin-top: 30%;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 8px 8px 0px rgb(0, 0, 0, 0.12);
+  color: #9f9f9f;
+  cursor: pointer;
+}
+
+.create-quiz-QA-button.active {
+  background-color: #60b84b;
+  color: white;
+}
+
+.create-quiz-poll-button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding: 8px 25px;
+  margin-top: 27%;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 8px 8px 0px rgb(0, 0, 0, 0.12);
+  color: #9f9f9f;
+  cursor: pointer;
+}
+.create-quiz-poll-button.active-poll {
+  background-color: #60b84b;
+  color: white;
+}
+
+.create-quiz-cancel-continue {
+  display: flex;
+  gap: 40px;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.create-quiz-cancel-button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding: 8px 60px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 8px 8px 0px rgb(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.create-quiz-continue-button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+  padding: 8px 60px;
+  border: none;
+  border-radius: 8px;
+  background-color: #60b84b;
+  box-shadow: 0 8px 8px 0px rgb(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.qa-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.qa-popup-content h1 {
+  margin-bottom: 20px;
+}

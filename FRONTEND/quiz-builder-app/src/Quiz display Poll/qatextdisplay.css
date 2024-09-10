@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.qatext-display-container {
+  background-color: #041325;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;
+}
+
+.qa-text-display-body {
+  width: 80%;
+  max-width: 1000px;
+  min-height: 643px;
+  border-radius: 15px;
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; /* Allow content to stack vertically */
+  justify-content: space-between;
+}
+
+.qatext-display-question-progress {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #474444;
+  margin-top: -90px;
+  margin-left: 30px;
+}
+
+.qatext-display-question-header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #474444;
+}
+
+.qatext-display-options {
+  display: grid; /* Use grid layout for precise control */
+  grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+  /* grid-template-rows: auto auto; Two rows of height based on content */
+  gap: 10px; /* Space between grid items */
+  margin-top: 10px;
+  /* align-items: start; */
+  justify-items: center; /*Center items horizontally */
+}
+
+.qatext-display-option-label {
+  width: 324px;
+  height: 140px;
+  border: 5px solid transparent;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+}
+/* Image covers the entire box when it's image-only */
+.qatext-display-option-label.only-image.qatext-display-images {
+  width: 120%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the box */
+}
+
+/* For options with both text and image, keep the image contained and text displayed */
+.qatext-display-option-label.qatext-display-images {
+  width: 100px;
+  height: 60px;
+  object-fit: contain; /* Image fits within the box */
+  margin-bottom: 5px; /* Spacing between text and image */
+}
+
+/* old */
+.qatext-display-image {
+  width: 140px;
+  height: 150px;
+  object-fit: contain;
+  margin-top: -120px;
+  overflow: hidden;
+}
+.qatext-display-image-container {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.qatext-display-option-label.selected {
+  border-color: #007bff; /* Blue border for the selected option */
+}
+
+.qatext-display-option-para {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.qatext-display-next-btn {
+  width: 320px;
+  height: 56px;
+  border: none;
+  border-radius: 10px;
+  background-color: #60b84b;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.qatext-display-next-submit-container {
+  text-align: center;
+  margin-bottom: 2%;
+  cursor: pointer;
+}
+
+.qatext-display-submit-btn {
+  width: 320px;
+  height: 56px;
+  border: none;
+  border-radius: 10px;
+  background-color: #60b84b;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.qatext-display-timer-para {
+  color: #d60000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  float: right;
+  margin-right: 10px;
+}
+
+.timer {
+  margin-bottom: 20px;
+}
+
+/* Responsive Design - Smaller and Medium Screens */
+@media (max-width: 768px) {
+  .qatext-display-container {
+    background-color: white; /* Change container background to white */
+    justify-content: flex-start; /* Align content to the top */
+    padding: 0; /* Remove padding */
+  }
+
+  .qa-text-display-body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 15px;
+    justify-content: space-between;
+  }
+
+  .qatext-display-options {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+    gap: 50px;
+  }
+
+  .qatext-display-option-label {
+    width: 80%; /* Full width for option labels */
+    height: auto; /* Adjust height */
+  }
+
+  .qatext-display-option-para {
+    font-size: 24px; /* Smaller font for smaller screens */
+  }
+
+  .qatext-display-next-btn,
+  .qatext-display-submit-btn {
+    width: 60%; /* Full width for buttons */
+    font-size: 24px; /* Smaller font size */
+  }
+
+  .qatext-display-next-submit-container {
+    margin-top: auto; /* Push the buttons to the bottom on smaller screens */
+    margin-bottom: 15px; /* Space from the bottom of the screen */
+  }
+
+  .qatext-display-timer-para {
+    font-size: 24px; /* Smaller timer font size */
+  }
+
+  .qatext-display-question-progress-timer-container {
+    display: flex;
+    flex-direction: row; /* Keep timer and question progress in the same row */
+    justify-content: space-between; /* Push them to opposite sides */
+  }
+}
+
+@media (max-width: 480px) {
+  .qa-text-display-body {
+    padding: 10px;
+  }
+
+  .qatext-display-question-progress,
+  .qatext-display-question-header {
+    font-size: 24px; /* Smaller fonts for question progress and headers */
+  }
+
+  .qatext-display-option-para {
+    font-size: 20px; /* Even smaller font for very small screens */
+  }
+}

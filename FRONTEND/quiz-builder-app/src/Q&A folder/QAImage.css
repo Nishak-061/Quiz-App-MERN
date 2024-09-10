@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.qaimage-container {
+  width: 845px;
+  min-height: 520px;
+  background-color: white;
+}
+.qaimage-plus {
+  display: flex;
+  gap: 70%;
+  color: #969696;
+}
+.qaimage-plus-sign {
+  margin-top: 2px;
+  font-size: 40px;
+  margin-left: 2%;
+  cursor: pointer;
+}
+
+.qaimage-input {
+  margin-left: 10%;
+  margin-top: -12px;
+}
+.qaimage-input-box {
+  width: 650px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 8px 8px 8px 0px rgb(0, 0, 0, 0.12),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.qaimage-input-box::placeholder {
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.qaimage-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qaimage-radio-button {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #969696; /* Green border */
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  top: 2px;
+  right: 35px;
+  margin-left: 14px;
+}
+
+.qaimage-radio-button:checked::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #60b84b; /* Green color for the inside */
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 1.5px;
+}
+
+.qaimage-option-type-para {
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0; /* Space between header and options */
+  margin-right: 9%;
+}
+
+.qaimage-options-type {
+  display: flex;
+  align-items: center; /* Vertically centers the items */
+  gap: 40px; /* Space between options */
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.qaimage-option-type-radio {
+  display: flex;
+  align-items: center; /* Centers the radio and label vertically */
+}
+
+.qaimage-option-type-radio input[type="radio"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #9f9f9f; /* Black border */
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  margin-right: 8px; /* Space between radio button and label */
+}
+
+.qaimage-option-type-radio input[type="radio"]:checked::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #000; /* Black color for the inside */
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 1.5px;
+}
+
+.qaimage-option-type-radio label {
+  margin: 0; /* Removes default margin on labels */
+}
+
+.qaimage-ans-option {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 260px;
+  margin-left: 10%;
+}
+
+.qaimage-option {
+  height: 20px;
+  width: 190px;
+  margin-left: -24px;
+  padding: 13px 29px 13px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 8px 8px 8px 0px rgb(0, 0, 0, 0.12),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.qaimage-option::placeholder {
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.qaimage-delete-icon {
+  margin-left: 5%;
+}
+
+.qaimage-add-option-btn {
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  background-color: white;
+  cursor: pointer;
+  width: 220px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 8px 8px 8px 0px rgb(0, 0, 0, 0.12),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.qaimage-timer-option {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 43%;
+  left: 70%;
+}
+
+.qaimage-delete-icon {
+  color: red;
+}
+
+.qaimage-timer-off,
+.qaimage-five-sec,
+.qaimage-ten-sec {
+  padding: 8px;
+  width: 100px;
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 8px 8px 8px 0px rgb(0, 0, 0, 0.12),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.qaimage-header-timer {
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin-left: 22px;
+}
+
+.qaimage-cancel-continue-btn {
+  display: flex;
+  gap: 100px;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+.qaimage-continue-btn {
+  color: white;
+  background-color: #60b84b;
+}
+
+.qaimage-cancel-btn,
+.qaimage-continue-btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 12px;
+  width: 240px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 8px 8px 8px 0px rgb(0, 0, 0, 0.12),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}

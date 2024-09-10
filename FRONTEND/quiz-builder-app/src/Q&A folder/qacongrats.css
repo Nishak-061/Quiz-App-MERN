@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.qacongrats-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.qacongrats-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 840px;
+  height: 480px;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.qacongrats-close-icon {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  cursor: pointer;
+}
+
+.qacongrats-close-item {
+  font-weight: 500;
+  font-size: 30px;
+  color: #474444;
+}
+
+.qacongrats-header-item {
+  margin-top: 10%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.qacongrats-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #474444;
+}
+
+.qacongrats-input-box {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.qacongrats-input-box-item {
+  width: 675px;
+  height: 60px;
+  padding: 10px;
+  color: #474444;
+  background-color: #ededed;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.qacongrats-share-box {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.qacongrats-share-button {
+  padding: 15px 80px;
+  background-color: #60b84b;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}

@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.polltext-container {
+  width: 845px;
+  min-height: 560px;
+  background-color: white;
+  border-radius: 10px;
+}
+.polltext-plus {
+  display: flex;
+  gap: 70%;
+  color: #969696;
+  margin-left: 2%;
+  /* margin-top: 2px; */
+}
+
+.polltext-plus-container {
+  display: flex;
+  align-items: center;
+}
+
+.polltext-plus-sign {
+  margin-top: 2px;
+  font-size: 40px;
+  cursor: pointer;
+  font-size: 50px;
+  margin-bottom: 10%;
+}
+
+.polltext-plus {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Sets the gap between numbers and plus sign */
+  color: #969696;
+  margin-left: 2%;
+}
+
+.polltext-header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #9f9f9f;
+  /* margin-top: -2px;
+    margin-left: 32%; */
+  position: fixed;
+  right: 20%;
+}
+
+.polltext-input {
+  margin-left: 10%;
+  margin-top: -12px;
+}
+.polltext-input-box {
+  width: 650px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 8px 8px 8px 0px rgb(0, 0, 0, 0.12),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.polltext-input-box::placeholder {
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.polltext-options {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.polltext-same-line-option {
+  display: flex;
+  margin-left: 12%;
+}
+
+.polltext-option-type-para {
+  margin-bottom: 0; /* Space between header and options */
+  margin-right: 9%;
+  color: #9f9f9f;
+}
+
+.polltext-options-type {
+  display: flex;
+  align-items: center; /* Vertically centers the items */
+  gap: 40px; /* Space between options */
+}
+
+.polltext-option-type-radio {
+  display: flex;
+  align-items: center; /* Centers the radio and label vertically */
+  margin-right: 10px;
+}
+
+.polltext-option-type-radio input[type="radio"] {
+  margin-right: 8px; /* Space between radio button and label */
+}
+
+.polltext-option-type-radio label {
+  margin: 0; /* Removes default margin on labels */
+}
+
+.polltext-option-type-radio input[type="radio"] {
+  /* Hide default radio button */
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  border: 2px solid black; /* Border color */
+  background-color: white; /* Default background color */
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin-right: 10px; /* Space between radio and label */
+}
+
+.polltext-option-type-radio input[type="radio"]:checked {
+  background-color: white; /* Color when selected */
+}
+
+.polltext-option-type-radio input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black; /* Inner dot color */
+  transform: translate(-50%, -50%);
+}
+
+.polltext-ans-option {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 220px;
+  margin-left: 10%;
+}
+
+.polltext-option::placeholder {
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.polltext-cancel-continue-btn {
+  position: absolute;
+  bottom: 100px;
+  left: 20%;
+  display: flex;
+  gap: 100px;
+  margin-top: 3%;
+  margin-left: 10%;
+}
+
+.polltext-continue-btn {
+  color: white;
+  background-color: #60b84b;
+}
+
+.polltext-cancel-btn,
+.polltext-continue-btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 12px;
+  width: 240px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 8px 8px 8px 0px rgb(0, 0, 0, 0.12),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.polltext-plus-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.polltext-numbers {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.polltext-number-circle {
+  position: relative;
+  top: 12px;
+  width: 48px;
+  height: 48px;
+  color: #9f9f9f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: -18px;
+  box-shadow: 8px 8px 8px 0px rgb(0, 0, 0, 0.12),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cross-icon {
+  position: absolute;
+  top: -7px; /* Adjust as needed */
+  right: 7px; /* Adjust as needed */
+  cursor: pointer;
+  color: #474444; /* Color of the cross icon */
+  font-size: 14px; /* Adjust size if needed */
+}
+
+.polltext-number-circle span {
+  z-index: 1; /* Ensure text is above the background */
+}
+
+.polltext-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adds some spacing between the options */
+}
+
+.polltext-option-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative; /* Ensure the delete button is positioned correctly */
+  width: 100%; /* Ensures each option takes the full width of the parent */
+}
+
+.polltext-option {
+  font-size: 15px;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 12%;
+  box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.12),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.polltext-delete-btn {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.polltext-option-wrapper:nth-child(n + 3) .delete-btn {
+  visibility: visible; /* Show from third option onwards */
+}

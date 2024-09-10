@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  position: fixed; /* Fix the sidebar to the viewport */
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 17%;
+  background-color: white;
+  box-sizing: border-box;
+  overflow: hidden; /* Hide any overflow */
+}
+
+.sidebar-header {
+  text-align: center;
+  font-family: "Jomhuria", serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #474444;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: -10%;
+}
+
+.middle-content {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  padding: 40px;
+  margin-left: -10%;
+  cursor: pointer;
+}
+
+.item {
+  height: 50px; /* Set a fixed height */
+  width: 200px; /* Set a fixed width */
+  background-color: transparent; /* Default background color */
+  display: flex; /* Center content horizontally and vertically */
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent; /* Default border */
+  border-radius: 8px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.item.active {
+  background-color: white; /* Background color of the active box */
+  border: 1px solid #ccc; /* Border around the active box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.middle-content h1 {
+  margin-bottom: 50px; /* Adds a gap between each h1 element */
+}
+
+.horizontal-line {
+  width: 150px;
+  text-align: center;
+}
+
+.sidebar .horizontal-line {
+  margin-bottom: -15px; /* Gap between horizontal line and logout */
+}
+
+.logout {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  color: #474444;
+  margin-top: 20%;
+  cursor: pointer;
+}
+
+.main-content {
+  margin-left: 17%;
+  background-color: #ededed;
+  width: 83%;
+  box-sizing: border-box;
+}
+
+/* Container for the boxes */
+.box-container {
+  display: flex; /* Align boxes horizontally */
+  gap: 80px; /* Space between the boxes */
+  padding: 20px; /* Optional: padding around the container */
+  justify-content: center;
+  margin-top: 7%;
+}
+
+/* Individual box styling */
+.box {
+  height: 130px;
+  width: 250px;
+  background-color: white; /* Background color of the boxes */
+  display: flex; /* Center content horizontally and vertically */
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc; /* Optional: border around the boxes */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.dashboard-quizzes-color {
+  color: #ff5d01;
+  display: flex;
+  gap: 15px;
+}
+.dashboard-quiz-count {
+  font-size: 60px;
+}
+.dashboard-text-quizzes {
+  font-size: 20px;
+}
+
+.dashboard-questions-color {
+  color: #60b84b;
+  display: flex;
+  gap: 15px;
+}
+.dashboard-question-count {
+  font-size: 60px;
+}
+.dashboard-text-questions {
+  font-size: 20px;
+}
+
+.dashboard-impression-color {
+  color: #5076ff;
+  display: flex;
+  gap: 12px;
+}
+.dashboard-impression-count {
+  font-size: 60px;
+}
+.dashboard-text-impressions {
+  font-size: 20px;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  height: 35%;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.dashboard-trending-quiz {
+  margin-left: 13%;
+  margin-top: 6%;
+}
+
+.dashboard-trending-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #474444;
+}
+
+.trending-quiz-boxes {
+  display: flex;
+  flex-wrap: wrap; /* Allows the boxes to wrap to the next line if they overflow */
+  gap: 20px; /* Optional: adds space between boxes */
+}
+
+.quiz-box {
+  width: 181px;
+  height: 70px;
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Optional: adds a border to the box */
+  padding: 5px; /* Adjust padding to fit content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff; /* Optional: adds background color */
+  overflow: hidden; /* Ensures content does not overflow outside the box */
+  text-align: center; /* Centers text inside the box */
+}
+
+.dashboard-quiz-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px; /* Adjust spacing between title and impressions */
+}
+
+.dashboard-quiz-impressions {
+  margin: 2px 0; /* Reduces margin to fit content */
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Hides overflow text */
+  text-overflow: ellipsis; /* Adds ellipsis (...) to overflow text */
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  color: #ff5d01;
+}
+
+.dashboard-quiz-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #474444;
+  margin: 2px 0; /* Reduces margin to fit content */
+}
+
+.dashboard-quiz-date {
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #60b84b;
+}

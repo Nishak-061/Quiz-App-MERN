@@ -1,0 +1,16 @@
+{
+  "name": "quiz-builder-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "cd BACKEND && npm install",
+    "start-server": "cd BACKEND && node Server.js",
+    "install-frontend" : "cd FRONTEND/quiz-builder-app && npm install",
+    "build-frontend": "cd FRONTEND/quiz-builder-app && npm run build",
+    "start-frontend": "cd FRONTEND/quiz-builder-app && npm run start" 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.qatext-container {
+  width: 845px;
+  min-height: 520px;
+  background-color: white;
+}
+
+.qatext-plus-container {
+  display: flex;
+  align-items: center;
+}
+
+.qatext-plus {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Sets the gap between numbers and plus sign */
+  color: #969696;
+  margin-left: 2%;
+  margin-top: -1%;
+}
+.qatext-plus-sign {
+  margin-top: 2px;
+  font-size: 40px;
+  margin-left: 2%;
+  cursor: pointer;
+}
+
+.qatext-numbers {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.qatext-number-circle {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  color: #9f9f9f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: -18px;
+  box-shadow: 8px 8px 8px 0px rgb(0, 0, 0, 0.12),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.qatext-header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #9f9f9f;
+
+  position: fixed;
+  left: 75%;
+  top: 2%;
+}
+
+.qatext-input {
+  margin-left: 10%;
+  margin-top: -12px;
+}
+.qatext-input-box {
+  width: 650px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 8px 8px 8px 0px rgb(0, 0, 0, 0.12),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.qatext-input-box::placeholder {
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.qatext-same-line-option {
+  display: flex;
+  margin-left: 12%;
+}
+
+.qatext-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.qatextbox-option {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 12%;
+  box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.12),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.qatext-radio-button {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #969696; /* Green border */
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  left: 10%;
+  margin-left: -14px;
+}
+
+.qatext-radio-button:checked::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #60b84b; /* Green color for the inside */
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 1.5px;
+}
+
+.qatext-option-wrapper.selected .qatextbox-option {
+  background-color: #e0f7e9; /* Green background for selected option */
+}
+
+.qatext-option-wrapper input[type="radio"]:checked + label {
+  background-color: #e0f7e9; /* Green background for selected radio button */
+}
+
+.qatext-add-option-btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #9f9f9f;
+  padding: 10px;
+  width: 24%;
+  border: none;
+  border-radius: 10px;
+  margin-left: 12%;
+  box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.12),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.qatext-option-type-para {
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0; /* Space between header and options */
+  margin-right: 9%;
+}
+
+.qatext-options-type {
+  display: flex;
+  align-items: center; /* Vertically centers the items */
+  gap: 40px; /* Space between options */
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.qatext-option-type-radio {
+  display: flex;
+  align-items: center; /* Centers the radio and label vertically */
+}
+
+.qatext-option-type-radio input[type="radio"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #9f9f9f; /* Black border */
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  margin-right: 8px; /* Space between radio button and label */
+}
+
+.qatext-option-type-radio input[type="radio"]:checked::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #000; /* Black color for the inside */
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 1.5px;
+}
+
+.qatext-option-type-radio label {
+  margin: 0; /* Removes default margin on labels */
+}
+
+.qatext-ans-option {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 220px;
+  margin-left: 10%;
+}
+
+.qatext-delete-option {
+  color: red;
+  margin-left: 10px;
+}
+
+.qatext-timer-option {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 43%;
+  left: 70%;
+}
+
+.qatext-timer-option button.active {
+  background-color: #d60000; /* Change to your preferred color */
+  color: white;
+}
+
+.qatext-timer-off,
+.qatext-five-sec,
+.qatext-ten-sec {
+  padding: 8px;
+  width: 100px;
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 8px 8px 8px 0px rgb(0, 0, 0, 0.12),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.qatext-header-timer {
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin-left: 22px;
+}
+
+.qatext-cancel-continue-btn {
+  display: flex;
+  gap: 100px;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+.qatext-continue-btn {
+  background-color: #60b84b;
+  color: white;
+}
+.qatext-cancel-btn,
+.qatext-continue-btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 12px;
+  width: 240px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 8px 8px 8px 0px rgb(0, 0, 0, 0.12),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}

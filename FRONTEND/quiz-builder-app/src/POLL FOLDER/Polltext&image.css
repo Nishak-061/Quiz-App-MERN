@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.polltextimage-container {
+  width: 845px;
+  min-height: 530px;
+  background-color: white;
+  border-radius: 10px;
+}
+.polltextimage-plus {
+  display: flex;
+  gap: 70%;
+  color: #969696;
+}
+.polltextimage-plus-sign {
+  margin-top: 10px;
+  font-size: 40px;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+.polltextimage-same-line {
+  display: flex;
+  gap: 10px;
+}
+
+.polltextimage-number-circle {
+  position: relative;
+  top: 20px;
+  left: 10px;
+  width: 48px;
+  height: 48px;
+  color: #9f9f9f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  /* margin-right: 5px; */
+  /* margin-top: -18px; */
+  box-shadow: 8px 8px 8px 0px rgb(0, 0, 0, 0.12),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.polltextimage-header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #9f9f9f;
+  /* margin-top: -2px;
+    margin-left: 32%; */
+  position: fixed;
+  right: 20%;
+}
+
+.polltextimage-input {
+  margin-left: 10%;
+  margin-top: -3%;
+}
+.polltextimage-input-box {
+  width: 650px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 8px 8px 8px 0px rgb(0, 0, 0, 0.12),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.polltextimage-input-box::placeholder {
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.polltextimage-options {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.polltextimage-option-type-para {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #9f9f9f;
+  margin-bottom: 0; /* Space between header and options */
+  margin-right: 9%;
+}
+
+.polltextimage-options-type {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #9f9f9f;
+  display: flex;
+  align-items: center; /* Vertically centers the items */
+  gap: 40px; /* Space between options */
+}
+
+.polltextimage-option-type-radio {
+  display: flex;
+  align-items: center; /* Centers the radio and label vertically */
+}
+
+.polltextimage-option-type-radio input[type="radio"] {
+  margin-right: 8px; /* Space between radio button and label */
+}
+
+.polltextimage-option-type-radio label {
+  margin: 0; /* Removes default margin on labels */
+}
+
+.polltextimage-option-type-radio input[type="radio"] {
+  /* Hide default radio button */
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  border: 2px solid black; /* Border color */
+  background-color: white; /* Default background color */
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin-right: 10px; /* Space between radio and label */
+}
+
+.polltextimage-option-type-radio input[type="radio"]:checked {
+  background-color: white; /* Color when selected */
+}
+
+.polltextimage-option-type-radio input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black; /* Inner dot color */
+  transform: translate(-50%, -50%);
+}
+
+.polltextimage-ans-option {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* width: 220px; */
+  margin-left: 10%;
+}
+
+.polltextimage-option-textbox {
+  display: flex;
+  gap: 20px;
+}
+
+.polltextimage-option-textbox input[type="text"] {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 8px 8px 8px 0px rgb(0, 0, 0, 0.12),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.polltextimage-option-textbox input[type="text"]::placeholder {
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.polltextimage-first-option-image,
+.polltextimage-second-option-image,
+.polltextimage-third-option-image,
+.polltextimage-fourth-option-image {
+  width: 220px;
+}
+
+.polltextimage-cancel-continue-btn {
+  position: fixed;
+  bottom: 100px;
+  left: 100px;
+  display: flex;
+  gap: 100px;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.polltextimage-continue-btn {
+  color: white;
+  background-color: #60b84b;
+}
+
+.polltextimage-cancel-btn,
+.polltextimage-continue-btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 12px;
+  width: 240px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 8px 8px 8px 0px rgb(0, 0, 0, 0.12),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.polltextimage-delete-btn {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}

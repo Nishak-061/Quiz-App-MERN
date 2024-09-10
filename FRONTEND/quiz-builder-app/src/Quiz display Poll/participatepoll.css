@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.participating-poll-container {
+  background-color: #041325;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.participate-poll-header-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.participating-poll-header {
+  height: 600px;
+  width: 1066px;
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.participate-thankyou-poll {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 70px;
+  color: #474444;
+  margin-top: 10%;
+}
+
+/* Styles for tablets and smaller screens */
+@media (max-width: 768px) {
+  .participating-poll-container {
+    background-color: white;
+  }
+  .participate-thankyou-poll {
+    font-size: 6vw; /* Adjust font size for tablets */
+  }
+
+  .participating-poll-header {
+    padding: 15px; /* Reduce padding for smaller devices */
+  }
+}
+
+/* Styles for mobile screens */
+@media (max-width: 480px) {
+  .participate-thankyou-poll {
+    font-size: 8vw; /* Larger font size for mobile screens */
+  }
+
+  .participating-poll-header {
+    padding: 10px; /* Further reduce padding for mobile */
+  }
+}

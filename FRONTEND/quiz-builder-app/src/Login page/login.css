@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  background-color: #f2f2f2;
+}
+
+.container {
+  height: 500px;
+  width: 800px;
+  position: absolute;
+  top: 13%;
+  left: 21%;
+  box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background-color: white;
+}
+
+.header-quizze {
+  font-family: "Jomhuria", serif;
+  font-weight: 400;
+  color: #474444;
+  text-align: center;
+  font-size: 80px;
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* Adds gap between the buttons */
+}
+
+.btn-signup,
+.btn-login {
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  width: 150px;
+}
+
+.btn-signup {
+  background-color: white;
+}
+
+.btn-login {
+  background-color: white;
+}
+
+.btn-signup:active,
+.btn-signup:focus,
+.btn-login:active,
+.btn-login:focus {
+  box-shadow: 0 4px 8px rgba(0, 0, 255, 0.3); /* Shadow on click or focus */
+}
+
+.email {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.label-email {
+  margin-right: 15px;
+}
+
+.input-email {
+  width: 200px;
+  padding: 8px;
+  border: none;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #f4f4f4;
+  margin-left: 5px;
+  font-size: 1em;
+}
+
+.password {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-right: 30px;
+  text-align: center;
+  padding: 10px;
+}
+
+.label-password {
+  margin-right: 15px;
+}
+
+.input-password {
+  width: 200px;
+  padding: 8px;
+  border: none;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #f4f4f4;
+  font-size: 1em;
+}
+
+.submit {
+  text-align: center;
+  margin-top: 6%;
+}
+
+.submit-btn {
+  padding: 6px 8px;
+  width: 200px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  background-color: #a9bcff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
