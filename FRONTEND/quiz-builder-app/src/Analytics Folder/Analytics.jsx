@@ -34,7 +34,7 @@ const Analytics = () => {
     const fetchQuizzes = async () => {
       try {
         const response = await axios.get(
-          "https://quiz-app-mern-0bj4.onrender.com/api/quizzes/analytics"
+          `${REACT_APP_API_BASE_URL}/api/quizzes/analytics`
         );
         setQuizzes(response.data.quizzes || []);
       } catch (error) {
@@ -124,7 +124,7 @@ const Analytics = () => {
 
     try {
       const response = await axios.get(
-        `https://quiz-app-mern-0bj4.onrender.com/api/quizzes/quiz/${quizId}`,
+        `${REACT_APP_API_BASE_URL}/api/quizzes/quiz/${quizId}`,
         {
           headers: {
             Authorization: `Bearer ${authToken}`,
