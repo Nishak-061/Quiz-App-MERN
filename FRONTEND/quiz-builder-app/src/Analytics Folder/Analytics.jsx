@@ -56,11 +56,11 @@ const Analytics = () => {
 
     // Ensure quiz.title is valid and generate the appropriate link
     if (quiz.title.toLowerCase() === "poll quiz") {
-      quizLink = `https://quiz-app-mern-5.onrender.com/quiz/${quiz._id}`;
+      quizLink = `https://quiz-app-mern-7.onrender.com/quiz/${quiz._id}`;
     } else if (quiz.title.toLowerCase() === "q&a quiz") {
-      quizLink = `https://quiz-app-mern-5.onrender.com/QA-quiz/${quiz._id}`;
+      quizLink = `https://quiz-app-mern-7.onrender.com/QA-quiz/${quiz._id}`;
     } else {
-      quizLink = `https://quiz-app-mern-5.onrender.com/quiz/${quiz._id}`; // Default link for other quiz types
+      quizLink = `https://quiz-app-mern-7.onrender.com/quiz/${quiz._id}`; // Default link for other quiz types
     }
 
     // Copy the generated quiz link to the clipboard
