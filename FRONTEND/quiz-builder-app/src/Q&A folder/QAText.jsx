@@ -168,7 +168,7 @@ const QAText = ({ onClose }) => {
 
     try {
       const response = await axios.post(
-        "https://quiz-app-mern-0bj4.onrender.com/api/quizzes/quiz/create",
+        `${REACT_APP_API_BASE_URL}/api/quizzes/quiz/create`,
         quizData,
         {
           headers: {
