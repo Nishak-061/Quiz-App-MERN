@@ -21,7 +21,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://quiz-app-mern-0bj4.onrender.com/api/auth/login",
+        `${REACT_APP_API_BASE_URL}/api/auth/login`,
         {
           email,
           password,
