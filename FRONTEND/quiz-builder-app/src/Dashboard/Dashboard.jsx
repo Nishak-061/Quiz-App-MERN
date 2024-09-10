@@ -44,7 +44,7 @@ const Dashboard = () => {
       try {
         const authToken = localStorage.getItem("auth-token");
         const response = await axios.get(
-          "https://quiz-app-mern-0bj4.onrender.com/api/quizzes/count",
+          `${REACT_APP_API_BASE_URL}/api/quizzes/count,
           {
             headers: { Authorization: `Bearer ${authToken}` },
           }
@@ -60,7 +60,7 @@ const Dashboard = () => {
       try {
         const authToken = localStorage.getItem("auth-token");
         const response = await axios.get(
-          "https://quiz-app-mern-0bj4.onrender.com/api/quizzes/questions/count",
+          `${REACT_APP_API_BASE_URL}/api/quizzes/questions/count`,
           {
             headers: { Authorization: `Bearer ${authToken}` },
           }
@@ -76,7 +76,7 @@ const Dashboard = () => {
       try {
         const authToken = localStorage.getItem("auth-token");
         const response = await axios.get(
-          "https://quiz-app-mern-0bj4.onrender.com/api/quizzes/impressions/count",
+          `${REACT_APP_API_BASE_URL}/api/quizzes/impressions/count`,
           {
             headers: { Authorization: `Bearer ${authToken}` },
           }
@@ -91,7 +91,7 @@ const Dashboard = () => {
     const fetchTrendingQuizzes = async () => {
       try {
         const response = await axios.get(
-          "https://quiz-app-mern-0bj4.onrender.com/api/quizzes/analytics"
+          `${REACT_APP_API_BASE_URL}/api/quizzes/analytics`
         );
         setQuizzes(response.data.quizzes || []);
       } catch (error) {
