@@ -14,12 +14,7 @@ dotenv.config();
 // Middlewares
 
 // Set up CORS
-app.use(
-  cors({
-    origin: "https://quiz-application-mern.onrender.com", // Replace with your front-end origin
-    credentials: true, // Allow credentials (cookies) to be sent
-  })
-);
+app.use(cors());
 
 app.use(cookieParser());
 app.use(express.json());
