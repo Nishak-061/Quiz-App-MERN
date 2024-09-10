@@ -55,24 +55,7 @@ router.get("/quiz/:quizId", async (req, res) => {
   const { quizId } = req.params;
   console.log(`Fetching quiz with ID: ${quizId}`);
 
-  const authHeader = req.headers["authorization"];
-  console.log("Received Auth Header:", authHeader);
-
-  if (authHeader && authHeader.startsWith("Bearer ")) {
-    const token = authHeader.split(" ")[1];
-    console.log("Extracted Token:", token);
-
-    try {
-      // Verify the token
-      const decoded = jwt.verify(token, process.env.JWT_SECRET);
-      console.log("Token verified, decoded data:", decoded);
-    } catch (error) {
-      console.error("Error verifying token:", error);
-      return res.status(401).json({ success: false, message: "Unauthorized" });
-    }
-  } else {
-    console.log("No Authorization header or not Bearer token");
-  }
+  // Removed authentication check to allow public access
 
   try {
     const quiz = await Quiz.findById(quizId);
@@ -93,6 +76,7 @@ router.get("/quiz/:quizId", async (req, res) => {
     res.status(500).json({ success: false, message: "Server error" });
   }
 });
+
 module.exports = router;
 
 router.post("/quiz/:quizId/submit", async (req, res) => {
