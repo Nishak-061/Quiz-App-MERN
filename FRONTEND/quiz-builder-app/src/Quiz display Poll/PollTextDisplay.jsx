@@ -21,7 +21,7 @@ const PollTextDisplay = () => {
 
       try {
         const response = await axios.get(
-          `https://quiz-app-mern-0bj4.onrender.com/api/quizzes/quiz/${quizId}`
+          `${REACT_APP_API_BASE_URL}/api/quizzes/quiz/${quizId}`
         );
         console.log("Quiz fetched successfully:", response.data);
         setQuiz(response.data.quiz);
@@ -29,7 +29,7 @@ const PollTextDisplay = () => {
         try {
           console.log(`Incrementing impression for quiz ID: ${quizId}`);
           await axios.post(
-            `https://quiz-app-mern-0bj4.onrender.com/api/quizzes/quiz/${quizId}/impression`
+            `${REACT_APP_API_BASE_URL}/api/quizzes/quiz/${quizId}/impression`
           );
           console.log("Impression incremented successfully");
         } catch (impressionError) {
@@ -74,7 +74,7 @@ const PollTextDisplay = () => {
 
     try {
       await axios.post(
-        `https://quiz-app-mern-0bj4.onrender.com/api/quizzes/quiz/${quizId}/submit`,
+        `${REACT_APP_API_BASE_URL}/api/quizzes/quiz/${quizId}/submit`,
         { answers: formattedAnswers }
       );
       setSubmitted(true);
