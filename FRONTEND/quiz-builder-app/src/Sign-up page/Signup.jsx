@@ -64,7 +64,7 @@ const Signup = () => {
 
     try {
       const response = await axios.post(
-        "https://quiz-app-mern-0bj4.onrender.com/api/auth/register",
+        "${REACT_APP_API_BASE_URL}/api/auth/register",
         {
           name,
           email,
