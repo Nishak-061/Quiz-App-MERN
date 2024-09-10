@@ -24,7 +24,7 @@ const QATextDisplay = () => {
 
       try {
         const response = await axios.get(
-          `https://quiz-builder-app-backend-1.onrender.com/api/quizzes/quiz/${quizId}`
+          `https://quiz-app-mern-0bj4.onrender.com/api/quizzes/quiz/${quizId}`
         );
         console.log("Quiz fetched successfully:", response.data);
         setQuiz(response.data.quiz);
@@ -34,7 +34,7 @@ const QATextDisplay = () => {
 
         // Record impression here
         await axios.post(
-          `https://quiz-builder-app-backend-1.onrender.com/api/quizzes/quiz/${quizId}/impression`
+          `https://quiz-app-mern-0bj4.onrender.com/api/quizzes/quiz/${quizId}/impression`
         );
       } catch (error) {
         console.error(
@@ -84,7 +84,7 @@ const QATextDisplay = () => {
 
     try {
       const response = await axios.post(
-        `https://quiz-builder-app-backend-1.onrender.com/api/quizzes/quiz/${quizId}/submit`,
+        `https://quiz-app-mern-0bj4.onrender.com/api/quizzes/quiz/${quizId}/submit`,
         {
           answers: formattedAnswers,
         }

@@ -85,7 +85,7 @@ const Analytics = () => {
       try {
         const authToken = localStorage.getItem("auth-token");
         await axios.delete(
-          `https://quiz-builder-app-backend-1.onrender.com/api/quizzes/quiz/${deleteQuizId}`,
+          `https://quiz-app-mern-0bj4.onrender.com/api/quizzes/quiz/${deleteQuizId}`,
           {
             headers: { Authorization: `Bearer ${authToken}` },
           }
@@ -124,7 +124,7 @@ const Analytics = () => {
 
     try {
       const response = await axios.get(
-        `https://quiz-builder-app-backend-1.onrender.com/api/quizzes/quiz/${quizId}`,
+        `https://quiz-app-mern-0bj4.onrender.com/api/quizzes/quiz/${quizId}`,
         {
           headers: {
             Authorization: `Bearer ${authToken}`,

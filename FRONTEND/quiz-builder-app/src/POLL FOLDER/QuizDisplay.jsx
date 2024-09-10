@@ -11,7 +11,7 @@ const QuizDisplay = () => {
     const fetchQuiz = async () => {
       try {
         const response = await axios.get(
-          `https://quiz-builder-app-backend-1.onrender.com/api/quizzes/quiz/${quizId}`
+          `https://quiz-app-mern-0bj4.onrender.com/api/quizzes/quiz/${quizId}`
         );
         setQuiz(response.data.quiz);
       } catch (error) {

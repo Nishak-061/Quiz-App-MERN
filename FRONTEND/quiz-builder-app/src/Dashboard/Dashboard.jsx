@@ -44,7 +44,7 @@ const Dashboard = () => {
       try {
         const authToken = localStorage.getItem("auth-token");
         const response = await axios.get(
-          "https://quiz-builder-app-backend-1.onrender.com/api/quizzes/count",
+          "https://quiz-app-mern-0bj4.onrender.com/api/quizzes/count",
           {
             headers: { Authorization: `Bearer ${authToken}` },
           }
@@ -60,7 +60,7 @@ const Dashboard = () => {
       try {
         const authToken = localStorage.getItem("auth-token");
         const response = await axios.get(
-          "https://quiz-builder-app-backend-1.onrender.com/api/quizzes/questions/count",
+          "https://quiz-app-mern-0bj4.onrender.com/api/quizzes/questions/count",
           {
             headers: { Authorization: `Bearer ${authToken}` },
           }
@@ -76,7 +76,7 @@ const Dashboard = () => {
       try {
         const authToken = localStorage.getItem("auth-token");
         const response = await axios.get(
-          "https://quiz-builder-app-backend-1.onrender.com/api/quizzes/impressions/count",
+          "https://quiz-app-mern-0bj4.onrender.com/api/quizzes/impressions/count",
           {
             headers: { Authorization: `Bearer ${authToken}` },
           }
@@ -91,7 +91,7 @@ const Dashboard = () => {
     const fetchTrendingQuizzes = async () => {
       try {
         const response = await axios.get(
-          "https://quiz-builder-app-backend-1.onrender.com/api/quizzes/analytics"
+          "https://quiz-app-mern-0bj4.onrender.com/api/quizzes/analytics"
         );
         setQuizzes(response.data.quizzes || []);
       } catch (error) {

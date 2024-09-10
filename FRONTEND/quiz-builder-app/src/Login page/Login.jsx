@@ -21,7 +21,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://quiz-builder-app-backend-1.onrender.com/api/auth/login",
+        "https://quiz-app-mern-0bj4.onrender.com/api/auth/login",
         {
           email,
           password,

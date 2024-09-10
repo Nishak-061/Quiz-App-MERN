@@ -168,7 +168,7 @@ const QAText = ({ onClose }) => {
 
     try {
       const response = await axios.post(
-        "https://quiz-builder-app-backend-1.onrender.com/api/quizzes/quiz/create",
+        "https://quiz-app-mern-0bj4.onrender.com/api/quizzes/quiz/create",
         quizData,
         {
           headers: {
