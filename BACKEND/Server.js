@@ -16,7 +16,7 @@ dotenv.config();
 // Set up CORS
 app.use(
   cors({
-    origin: "http://localhost:3000", // Replace with your front-end origin
+    origin: "https://quiz-application-mern.onrender.com", // Replace with your front-end origin
     credentials: true, // Allow credentials (cookies) to be sent
   })
 );
