@@ -16,7 +16,7 @@ const PollQuizAnalysis = () => {
     const fetchQuestions = async () => {
       try {
         const response = await axios.get(
-          `https://quiz-app-mern-0bj4.onrender.com/api/quizzes/quiz/${quizId}`
+          `${REACT_APP_API_BASE_URL}/api/quizzes/quiz/${quizId}`
         );
         // setQuestions(response.data.questions || []);
         setQuizData(response.data.quiz || {});
