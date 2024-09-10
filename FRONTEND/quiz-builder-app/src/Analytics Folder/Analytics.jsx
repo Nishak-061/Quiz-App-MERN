@@ -34,7 +34,7 @@ const Analytics = () => {
     const fetchQuizzes = async () => {
       try {
         const response = await axios.get(
-          "https://quiz-app-mern-0bj4.onrender.com/api/quizzes/analytics/api/quizzes/analytics"
+          "https://quiz-app-mern-0bj4.onrender.com/api/quizzes/analytics"
         );
         setQuizzes(response.data.quizzes || []);
       } catch (error) {
